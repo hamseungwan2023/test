@@ -9,14 +9,16 @@ const router = express.Router();
 
 app.use(
   express.static(
-    path.join(`${__dirname}/client/InfleanProject/InfleanProject/client/build`)
+    path.join(
+      `home/ubuntu/no/test/client/InfleanProject/InfleanProject/client/build`
+    )
   )
 );
 
 app.get("/", (req, res) => {
   res.sendFile(
     path.join(
-      `${__dirname}/client/InfleanProject/InfleanProject/client/build/index.html`
+      `home/ubuntu/no/test/client/InfleanProject/InfleanProject/client/build/index.html`
     )
   );
 });
