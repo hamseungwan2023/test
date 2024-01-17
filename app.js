@@ -15,7 +15,9 @@ app.use(
 
 app.get("/", (req, res) => {
   res.sendFile(
-    path.join(`${__dirname}/client/InfleanProject/client/build/index.html`)
+    path.join(
+      `${__dirname}/client/InfleanProject/InfleanProject/client/build/index.html`
+    )
   );
 });
 console.log(`${__dirname}/client/InfleanProject/client/build`);
