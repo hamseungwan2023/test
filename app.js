@@ -8,7 +8,9 @@ app.use(cors());
 const router = express.Router();
 
 app.use(
-  express.static(path.join(`${__dirname}/client/InfleanProject/client/build`))
+  express.static(
+    path.join(`${__dirname}/client/InfleanProject/InfleanProject/client/build`)
+  )
 );
 
 app.get("/", (req, res) => {
